@@ -75,11 +75,11 @@ AWS Boto, Django, Android Java Framework, Bee (Go)
 \sectionspace % Some white space after the section
 
 \subsection{SOFTWARE/TOOLS/SERVICES}
-Git \& GitHub, CI (Circle), Sentry \\
+Git \& GitHub, Sentry \\
 Vim, Sublime Text, VScode, JetBrains IDEs \\
-make, Doxygen, ssh, Nginx, Docker, Docker-compose \\
-MongoDB, PostgreSQL, Redis Cache, Elastic Search \\
-Mininet, Wireshark, Tcpdump \\
+make, Doxygen, ssh, Nginx, Docker, Docker-compose, EFK \\
+MongoDB, PostgreSQL, Postgis, Redis Cache, Elastic Search \\
+eBPF, Mininet, Wireshark, Tcpdump \\
 Heroku, Firebase-GCP, AWS \\
 GNU/Linux 20.04.1 LTS, Windows 10 Home
 
@@ -146,14 +146,27 @@ GNU/Linux 20.04.1 LTS, Windows 10 Home
 
 \section{Experience}
 
+\runsubsection{FAMPAY}
+\descript{| Backend Remote Intern | \href{https://fampay.in/}{Link}}
+
+\location{Bangalore}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Set up EFK Log Pipeline
+\item Add user location based filter storing them in Postgis.
+\item Add new KYC and sign-up flows among other things.
+\end{tightitemize}
+
+\sectionspace % Some white space after the section
+
 \runsubsection{MICROSOFT EDGE}
 \descript{| Software Developer Remote Intern}
 
 \location{Microsoft 2020}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
 \item Developed a new feature to share EDGE Collections.
-\item Set up the service to share the Collection and looked into syncing them.
+\item Set up the service to share the Collection and syncing them.
 \item Modified the Edge's codebase to modify and expose the API.
 \end{tightitemize}
 
@@ -163,7 +176,7 @@ GNU/Linux 20.04.1 LTS, Windows 10 Home
 \descript{| Student Developer |  \href{https://github.com/named-data-mobile/ndn-photo-app}{Link}}
 \location{Named Data Network 2019}
 \begin{tightitemize}
-\item Developed NpChat, a photo and ﬁle-sharing peer-to-peer decentralised application built on Android on NDN (ICN). Access control is ensured using encryption and data is fetched using AIMD pipelined Segment-Fetcher.
+\item Developed NpChat, a photo and ﬁle-sharing peer-to-peer decentralised application built for Android on NDN (ICN). Access control is ensured using encryption and data is fetched using AIMD pipelined Segment-Fetcher.
 \item Wrote the AIMD pipelined Segment-Fetcher for their Java Support Library.
 \item Updated the user Identity management application for NpChat.
 \end{tightitemize}
@@ -184,15 +197,21 @@ Wrote a number of blogs on Computer Networks and Protocols.
 
 \section{Projects} 
 
+\runsubsection{Scalable Data-Analytics-Pipeline}
+\location{UCSB, USA}
+\begin{tightitemize}
+\item Studied and developed eBPF-XDP to implement packet collection pipeline.
+\end{tightitemize}
+\sectionspace % Some white space after the section
+
 \runsubsection{Appetizer}
 \descript{| Product Manager \& Back end Head | \href{https://mess.iitr.ac.in}{Link}}
 \location{MDG IIT Roorkee}
 Appetizer is official mobile application for IIT Roorkee aiming towards the management of mess functionalities. Features include providing mess menu, recording the presence of students, give a rebate and simplify feedback processes.
 \begin{tightitemize}
 \item Developed new features on the back end while maintaining existing ones.
-\item Worked on Database Query Optimizing and reducing Network Traffic.
+\item Worked on Database Query optimization and reducing Network Traffic.
 \item Implemented and tested multi-messing feature.
-\item Handled the servers ensuring least service downtime.
 \end{tightitemize}
 \sectionspace % Some white space after the section
 
@@ -202,19 +221,18 @@ Appetizer is official mobile application for IIT Roorkee aiming towards the mana
 \descript{| Back-end Head | \href{https://codephile.mdg.iitr.ac.in}{Link}}
 \location{MDG IIT Roorkee}
 Codephile is a social networking application for competitive coders.\\
-Web application is written in Go-Lang using bee framework. It scrapes or make API requests to the platforms to show progress and statistics on users and his friends.\\
-The tech stack includes Redis, Elasticache, AWS-EC2, Firebase, Nginx, MongoDB, docker \& Bee
+The tech stack includes Redis Elasticache, ElasticSearch, AWS-EC2, Firebase, Nginx, MongoDB, docker \& Bee
 \begin{tightitemize}
 \item Headed \& mentored the back-end development and server deployment.
 \end{tightitemize}
 \sectionspace % Some white space after the section
 
-\runsubsection{File Share}
-\descript{| Developer | \href{https://github.com/dev-ritik/files_share}{Link}}
-\location{IIT Roorkee}
-File Share is a socket based file sharing application written in C++ and Sockets. The application also aims to provide a web interface to communicate to browsers via Web-Sockets.
+% \runsubsection{File Share}
+% \descript{| Developer | \href{https://github.com/dev-ritik/files_share}{Link}}
+% \location{IIT Roorkee}
+% File Share is a socket based file sharing application written in C++ and Sockets. The application also aims to provide a web interface to communicate to browsers via Web-Sockets.
 
-\sectionspace % Some white space after the section
+% \sectionspace % Some white space after the section
 
 %-
 %------------------------------------------------
@@ -225,7 +243,7 @@ File Share is a socket based file sharing application written in C++ and Sockets
 \section{Achievements} 
 \begin{tightitemize}
 \sectionspace % Some white space after the section
-\item Successfully ran Appetizer in the campus for 1 yr with the highest daily active user count of more than 3500. 
+\item Ran Appetizer in the campus for 1 yr with the average DAU exceeding 3500. 
 \item Our team stood 3rd in \href{https://www.hackinthenorth.com/}{Hackinthenorth} hackathon at IIIT Allahabad. 
 \item Secured All India Rank 1172 in JEE Advanced - 2017 among 2, 20,000 students \& 777 in JEE Main - 2017 among 1.5 million students.
 
